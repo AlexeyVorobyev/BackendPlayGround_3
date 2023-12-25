@@ -66,7 +66,8 @@ class JudgeService:
         return JudgeDTO(
             id=str(judge_instance.id),
             name=judge_instance.name,
-            description=judge_instance.description
+            surname=judge_instance.surname,
+            patronymic=judge_instance.patronymic,
         )
 
     def delete_judge(self, id_arg: str | None) -> str:
